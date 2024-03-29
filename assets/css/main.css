@@ -1,0 +1,328 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+header {
+  width: 100%;
+  height: auto;
+  display: flex;
+  justify-content: center;
+  position: absolute;
+  z-index: 1;
+}
+header .contanier {
+  width: 95%;
+  height: auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+header .contanier nav {
+  width: 55%;
+}
+header .contanier nav ul {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  list-style-type: none;
+}
+header .contanier nav ul li {
+  text-decoration: none;
+}
+header .contanier nav ul li a {
+  text-decoration: none;
+  font-family: Marcellus, sans-serif;
+  font-size: 15px;
+  font-weight: 400;
+  font-style: normal;
+  line-height: 23px;
+  color: rgb(255, 255, 255);
+}
+header .contanier nav ul li a:hover {
+  cursor: pointer;
+}
+header .contanier .contanierIcon {
+  width: 10%;
+  gap: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-weight: 400;
+  font-style: normal;
+  line-height: 17px;
+  color: rgba(255, 255, 255, 0.8);
+}
+header .contanier .contanierIcon #menyu {
+  display: none;
+}
+header .contanier .contanierIcon i {
+  font-size: 17px;
+}
+header .contanier .contanierIcon:hover {
+  cursor: pointer;
+}
+
+@media screen and (max-width: 990px) {
+  header .contanier nav ul {
+    display: none;
+  }
+  header .contanier .contanierIcon #menyu {
+    display: block;
+  }
+}
+#coffeeFactory {
+  background-image: url("https://corretto.qodeinteractive.com/wp-content/uploads/2018/04/home-1-slider-image-1.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  min-height: 110vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#coffeeFactory .contanier {
+  position: relative;
+  width: 100%;
+  height: auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+#coffeeFactory .contanier .coffeeText {
+  height: auto;
+  width: 60%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-direction: column;
+  gap: 30px;
+  position: absolute;
+  right: 0;
+}
+#coffeeFactory .contanier .coffeeText h1 {
+  font-family: Marcellus;
+  font-size: 68px;
+  font-weight: 300;
+  font-style: normal;
+  line-height: 78px;
+  color: rgb(255, 255, 255);
+}
+#coffeeFactory .contanier .coffeeText p {
+  font-size: 16px;
+  text-align: center;
+  font-weight: 300;
+  font-style: normal;
+  line-height: 28px;
+  color: rgb(255, 255, 255);
+}
+#coffeeFactory .contanier .coffeeText button {
+  width: 120px;
+  height: 40px;
+  background: transparent;
+  border: 1px solid white;
+  font-size: 14px;
+  font-weight: 600;
+  font-style: normal;
+  line-height: 16px;
+  color: rgb(255, 255, 255);
+  transition: 1s;
+}
+#coffeeFactory .contanier .coffeeText button:hover {
+  cursor: pointer;
+  background-color: #BE9C79;
+  transition: 1s;
+}
+
+@media screen and (max-width: 991px) and (min-width: 741px) {
+  #coffeeFactory .contanier .coffeeText h1 {
+    font-size: 58px;
+  }
+}
+@media screen and (max-width: 740px) and (min-width: 541px) {
+  #coffeeFactory .contanier .coffeeText h1 {
+    font-size: 38px;
+  }
+  #coffeeFactory .contanier .coffeeText p {
+    display: none;
+  }
+}
+@media screen and (max-width: 540px) and (min-width: 300px) {
+  #coffeeFactory .contanier .coffeeText h1 {
+    font-size: 20px;
+  }
+  #coffeeFactory .contanier .coffeeText p {
+    display: none;
+  }
+  #coffeeFactory .contanier .coffeeText button {
+    width: 80px;
+    height: 30px;
+    font-size: 10px;
+  }
+}
+#ourDelicious {
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+#ourDelicious .contanier {
+  width: 85%;
+  min-height: auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 30px;
+}
+#ourDelicious .contanier .ourDeliciousText {
+  width: 45%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 20px;
+  margin-top: 80;
+}
+#ourDelicious .contanier .ourDeliciousText h1 {
+  font-size: 45px;
+  font-weight: 400;
+  font-style: normal;
+  line-height: 55px;
+  color: rgb(38, 38, 38);
+}
+#ourDelicious .contanier .ourDeliciousText p {
+  font-size: 18px;
+  font-weight: 300;
+  font-style: normal;
+  line-height: 28px;
+  color: rgb(38, 38, 38);
+}
+#ourDelicious .contanier .ourDeliciousCards {
+  margin-top: 30px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+#ourDelicious .contanier .ourDeliciousCards .ourDeliciousCard {
+  width: 20%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 20px;
+}
+#ourDelicious .contanier .ourDeliciousCards .ourDeliciousCard h3 {
+  font-size: 20px;
+  font-weight: 400;
+  font-style: normal;
+  line-height: 30px;
+  color: rgb(190, 156, 121);
+}
+#ourDelicious .contanier .ourDeliciousCards .ourDeliciousCard p {
+  font-family: "Open Sans", sans-serif;
+  font-size: 15px;
+  font-weight: 300;
+  font-style: normal;
+  line-height: 26px;
+  color: rgb(101, 101, 101);
+}
+
+#theCoffee {
+  background-image: url("https://corretto.qodeinteractive.com/wp-content/uploads/2018/04/new-new-h1-bacground-img-3.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+#theCoffee .contanier {
+  height: auto;
+  width: 85%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 20px;
+}
+#theCoffee .contanier .theCoffeeText {
+  width: 50%;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 15px;
+}
+#theCoffee .contanier .theCoffeeText h1 {
+  font-family: "Marcellus", sans-serif;
+  font-size: 45px;
+  font-weight: 400;
+  font-style: normal;
+  line-height: 55px;
+  color: rgb(38, 38, 38);
+}
+#theCoffee .contanier .theCoffeeText p {
+  text-align: center;
+  font-family: "Open Sans", sans-serif;
+  font-size: 18px;
+  font-weight: 300;
+  font-style: normal;
+  line-height: 26px;
+  color: rgb(38, 38, 38);
+}
+#theCoffee .contanier .theCoffeeCards {
+  width: 60%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+#theCoffee .contanier .theCoffeeCards .theCoffeeCard {
+  width: 30%;
+  height: auto;
+}
+#theCoffee .contanier .theCoffeeCards .theCoffeeCard .theCoffeeImg {
+  width: 100%;
+  height: auto;
+}
+#theCoffee .contanier .theCoffeeCards .theCoffeeCard .theCoffeetxt {
+  width: 90%;
+}
+#theCoffee .contanier .theCoffeeCards .theCoffeeCard .theCoffeetxt h3 {
+  font-family: "Open Sans", sans-serif;
+  font-size: 20px;
+  font-weight: 400;
+  font-style: normal;
+  line-height: 30px;
+  color: rgb(101, 101, 101);
+}
+#theCoffee .contanier .theCoffeeCards .theCoffeeCard .theCoffeetxt h3:hover {
+  cursor: pointer;
+  color: rgb(190, 156, 121);
+}
+#theCoffee .contanier .theCoffeeCards .theCoffeeCard .theCoffeetxt p {
+  font-family: "Open Sans", sans-serif;
+  font-size: 15px;
+  font-weight: 300;
+  font-style: normal;
+  line-height: 26px;
+  color: rgb(101, 101, 101);
+}
+#theCoffee .contanier .theCoffeeCards .theCoffeeCard .theCoffeetxt button {
+  border: none;
+  background-color: transparent;
+  font-size: 12px;
+  font-weight: 600;
+  font-style: normal;
+  line-height: 14px;
+}
+#theCoffee .contanier .theCoffeeCards .theCoffeeCard .theCoffeetxt button:hover {
+  cursor: pointer;
+  color: rgb(190, 156, 121);
+}
